@@ -1,0 +1,213 @@
+<html>
+<body>
+<!-- Sankey generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Tue Feb 02 19:34:28 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataSankeyID1fb43ad475f4 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "HZD (2002)",
+"SF (2006)",
+1 
+],
+[
+ "HZD (2002)",
+"SMER (2006)",
+1 
+],
+[
+ "HZD (2002)",
+"SNS (2006)",
+1 
+],
+[
+ "LB (2002)",
+"HZD (2006)",
+1 
+],
+[
+ "LB (2002)",
+"LS-HZDS (2006)",
+1 
+],
+[
+ "ROMA (2002)",
+"HZD (2006)",
+1 
+],
+[
+ "ROSA (2002)",
+"LB (2006)",
+1 
+],
+[
+ "SDPO (2002)",
+"SF (2006)",
+1 
+],
+[
+ "ZAR (2002)",
+"HZD (2006)",
+1 
+],
+[
+ "NOSNP (2002)",
+"LB (2006)",
+2 
+],
+[
+ "SNS (2002)",
+"SLS (2006)",
+2 
+],
+[
+ "SZS (2002)",
+"SF (2006)",
+3 
+],
+[
+ "SDL (2002)",
+"SOS (2006)",
+4 
+],
+[
+ "SNJ (2002)",
+"SLNKO (2006)",
+4 
+],
+[
+ "HZDS (2002)",
+"HZD (2006)",
+5 
+],
+[
+ "SDL (2002)",
+"SMER (2006)",
+7 
+],
+[
+ "SNS (2002)",
+"SLNKO (2006)",
+12 
+],
+[
+ "LB (2002)",
+"LB (2006)",
+14 
+],
+[
+ "PSNS (2002)",
+"SLNKO (2006)",
+14 
+],
+[
+ "SNS (2002)",
+"SNS (2006)",
+18 
+],
+[
+ "ZRS (2002)",
+"ZRS (2006)",
+19 
+],
+[
+ "PSNS (2002)",
+"SNS (2006)",
+24 
+],
+[
+ "OKS (2002)",
+"OKS (2006)",
+27 
+] 
+];
+data.addColumn('string','source');
+data.addColumn('string','target');
+data.addColumn('number','candidates');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartSankeyID1fb43ad475f4() {
+var data = gvisDataSankeyID1fb43ad475f4();
+var options = {};
+options["width"] =   1000;
+options["height"] =    615;
+
+
+    var chart = new google.visualization.Sankey(
+    document.getElementById('SankeyID1fb43ad475f4')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "sankey";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartSankeyID1fb43ad475f4);
+})();
+function displayChartSankeyID1fb43ad475f4() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID1fb43ad475f4"></script>
+
+
+<!-- divChart -->
+  
+<div id="SankeyID1fb43ad475f4" 
+  style="width: 1000; height: 615;">
+</div>
+
+
+</body>
+</html>
