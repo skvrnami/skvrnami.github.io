@@ -1,0 +1,327 @@
+<html>
+<body>
+<!-- Sankey generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Tue Feb 02 11:52:30 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataSankeyID3c83e7b296 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Pirati (2010)",
+"Svobodni (2013)",
+1 
+],
+[
+ "CSNS (2010)",
+"LEV (2013)",
+1 
+],
+[
+ "KDU-CSL (2010)",
+"ANO 2011 (2013)",
+1 
+],
+[
+ "KONS (2010)",
+"HLVZHURU (2013)",
+1 
+],
+[
+ "KONS (2010)",
+"KC (2013)",
+1 
+],
+[
+ "M (2010)",
+"KDU-CSL (2013)",
+1 
+],
+[
+ "M (2010)",
+"LEV (2013)",
+1 
+],
+[
+ "M (2010)",
+"SPOZ (2013)",
+1 
+],
+[
+ "Obcane (2010)",
+"KAN (2013)",
+1 
+],
+[
+ "Obcane (2010)",
+"LEV (2013)",
+1 
+],
+[
+ "PB (2010)",
+"Pirati (2013)",
+1 
+],
+[
+ "SPOZ (2010)",
+"ANO 2011 (2013)",
+1 
+],
+[
+ "SPOZ (2010)",
+"HLVZHURU (2013)",
+1 
+],
+[
+ "SPOZ (2010)",
+"KDU-CSL (2013)",
+1 
+],
+[
+ "SPOZ (2010)",
+"Zmena (2013)",
+1 
+],
+[
+ "SPR-RSC (2010)",
+"HLVZHURU (2013)",
+1 
+],
+[
+ "Suverenita (2010)",
+"LEV (2013)",
+1 
+],
+[
+ "Suverenita (2010)",
+"Svobodni (2013)",
+1 
+],
+[
+ "Suverenita (2010)",
+"Usvit (2013)",
+1 
+],
+[
+ "Svobodni (2010)",
+"ANO 2011 (2013)",
+1 
+],
+[
+ "Svobodni (2010)",
+"Pirati (2013)",
+1 
+],
+[
+ "SZ (2010)",
+"KDU-CSL (2013)",
+1 
+],
+[
+ "SZ (2010)",
+"Usvit (2013)",
+1 
+],
+[
+ "KONS (2010)",
+"KAN (2013)",
+2 
+],
+[
+ "KONS (2010)",
+"KDU-CSL (2013)",
+2 
+],
+[
+ "Obcane (2010)",
+"KDU-CSL (2013)",
+2 
+],
+[
+ "Obcane (2010)",
+"Zmena (2013)",
+2 
+],
+[
+ "Suverenita (2010)",
+"ANO 2011 (2013)",
+2 
+],
+[
+ "M (2010)",
+"Usvit (2013)",
+3 
+],
+[
+ "Obcane (2010)",
+"ANO 2011 (2013)",
+3 
+],
+[
+ "SZ (2010)",
+"Zmena (2013)",
+3 
+],
+[
+ "KH (2010)",
+"Zmena (2013)",
+6 
+],
+[
+ "Svobodni (2010)",
+"HLVZHURU (2013)",
+8 
+],
+[
+ "KONS (2010)",
+"SsCR (2013)",
+10 
+],
+[
+ "HS (2010)",
+"Zmena (2013)",
+11 
+],
+[
+ "CSNS2005 (2010)",
+"LEV (2013)",
+16 
+],
+[
+ "PB (2010)",
+"PB (2013)",
+18 
+],
+[
+ "Suverenita (2010)",
+"HLVZHURU (2013)",
+27 
+],
+[
+ "KC (2010)",
+"KC (2013)",
+44 
+],
+[
+ "Pirati (2010)",
+"Pirati (2013)",
+44 
+],
+[
+ "SPOZ (2010)",
+"SPOZ (2013)",
+49 
+],
+[
+ "Svobodni (2010)",
+"Svobodni (2013)",
+63 
+],
+[
+ "DSSS (2010)",
+"DSSS (2013)",
+70 
+],
+[
+ "Suverenita (2010)",
+"Suverenita (2013)",
+70 
+],
+[
+ "SZ (2010)",
+"SZ (2013)",
+101 
+],
+[
+ "KDU-CSL (2010)",
+"KDU-CSL (2013)",
+125 
+] 
+];
+data.addColumn('string','source');
+data.addColumn('string','target');
+data.addColumn('number','value');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartSankeyID3c83e7b296() {
+var data = gvisDataSankeyID3c83e7b296();
+var options = {};
+options["width"] =   1000;
+options["height"] =    615;
+
+
+    var chart = new google.visualization.Sankey(
+    document.getElementById('SankeyID3c83e7b296')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "sankey";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartSankeyID3c83e7b296);
+})();
+function displayChartSankeyID3c83e7b296() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID3c83e7b296"></script>
+
+
+<!-- divChart -->
+  
+<div id="SankeyID3c83e7b296" 
+  style="width: 1000; height: 615;">
+</div>
+
+</body>
+</html>
