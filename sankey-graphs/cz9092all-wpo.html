@@ -1,0 +1,266 @@
+<html>
+<body>
+<!-- Sankey generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Wed Feb 03 14:14:35 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataSankeyID13b44292893 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "HSD-SMS (1990)",
+"LSU (1992)",
+1,
+0.03 
+],
+[
+ "OF (1990)",
+"CSSD (1992)",
+1,
+0 
+],
+[
+ "SB (1990)",
+"HZDJ (1992)",
+1,
+0.02 
+],
+[
+ "SB (1990)",
+"ODS-KDS (1992)",
+1,
+0.02 
+],
+[
+ "SZ (1990)",
+"ODS-KDS (1992)",
+1,
+0.01 
+],
+[
+ "SZ (1990)",
+"SPR-RSC (1992)",
+1,
+0.01 
+],
+[
+ "SZV (1990)",
+"KAN (1992)",
+1,
+0 
+],
+[
+ "VDSSPR (1990)",
+"SPR-RSC (1992)",
+1,
+0.04 
+],
+[
+ "VDSSPR (1990)",
+"SRNDJ (1992)",
+1,
+0.04 
+],
+[
+ "KSC (1990)",
+"HSD-SMS (1992)",
+2,
+0.01 
+],
+[
+ "SZV (1990)",
+"HSD-SMS (1992)",
+2,
+0.01 
+],
+[
+ "SB (1990)",
+"KAN (1992)",
+3,
+0.06 
+],
+[
+ "SD (1990)",
+"D92 (1992)",
+3,
+0.01 
+],
+[
+ "SZV (1990)",
+"SCPZR (1992)",
+3,
+0.01 
+],
+[
+ "CSS (1990)",
+"NSS-CSNS (1992)",
+5,
+0.02 
+],
+[
+ "SZV (1990)",
+"HSS (1992)",
+5,
+0.02 
+],
+[
+ "KDU (1990)",
+"ODS-KDS (1992)",
+6,
+0.02 
+],
+[
+ "HSD-SMS (1990)",
+"HSD-SMS (1992)",
+7,
+0.21 
+],
+[
+ "SZ (1990)",
+"LSU (1992)",
+7,
+0.05 
+],
+[
+ "OF (1990)",
+"D92 (1992)",
+8,
+0.03 
+],
+[
+ "CSS (1990)",
+"LSU (1992)",
+12,
+0.05 
+],
+[
+ "OF (1990)",
+"ODA (1992)",
+13,
+0.05 
+],
+[
+ "SD (1990)",
+"CSSD (1992)",
+14,
+0.05 
+],
+[
+ "OF (1990)",
+"OH (1992)",
+16,
+0.06 
+],
+[
+ "OF (1990)",
+"ODS-KDS (1992)",
+18,
+0.07 
+],
+[
+ "SZV (1990)",
+"LSU (1992)",
+24,
+0.09 
+],
+[
+ "KSC (1990)",
+"LB (1992)",
+29,
+0.2 
+],
+[
+ "KDU (1990)",
+"KDU-CSL (1992)",
+30,
+0.11 
+] 
+];
+data.addColumn('string','source');
+data.addColumn('string','target');
+data.addColumn('number','candidates');
+data.addColumn('number','percentage');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartSankeyID13b44292893() {
+var data = gvisDataSankeyID13b44292893();
+var options = {};
+options["width"] =   1000;
+options["height"] =    615;
+
+
+    var chart = new google.visualization.Sankey(
+    document.getElementById('SankeyID13b44292893')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "sankey";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartSankeyID13b44292893);
+})();
+function displayChartSankeyID13b44292893() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID13b44292893"></script>
+
+
+<!-- divChart -->
+  
+<div id="SankeyID13b44292893" 
+  style="width: 1000; height: 615;">
+</div>
+
+</body>
+</html>
