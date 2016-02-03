@@ -1,0 +1,297 @@
+<html>
+<body>
+<!-- Sankey generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Wed Feb 03 23:53:44 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataSankeyID13b42dd363a6 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "CAO (1996)",
+"CAO (1998)",
+10,
+0.07 
+],
+[
+ "CAO (1996)",
+"CSNS (1998)",
+2,
+0.01 
+],
+[
+ "CMUS (1996)",
+"CSNS (1998)",
+1,
+0 
+],
+[
+ "SD-LSNS (1996)",
+"CSNS (1998)",
+63,
+0.21 
+],
+[
+ "CMUS (1996)",
+"CSSD (1998)",
+1,
+0 
+],
+[
+ "NEZ (1996)",
+"CSSD (1998)",
+1,
+0.01 
+],
+[
+ "DEU (1996)",
+"DEU (1998)",
+113,
+0.38 
+],
+[
+ "CMUS (1996)",
+"DZJ (1998)",
+5,
+0.02 
+],
+[
+ "DZJ (1996)",
+"DZJ (1998)",
+71,
+0.24 
+],
+[
+ "SD-LSNS (1996)",
+"KDU-CSL (1998)",
+1,
+0 
+],
+[
+ "CMUS (1996)",
+"MoDS (1998)",
+12,
+0.04 
+],
+[
+ "HSMSMNSJ (1996)",
+"MoDS (1998)",
+18,
+0.17 
+],
+[
+ "MNS-HSS (1996)",
+"MoDS (1998)",
+22,
+0.2 
+],
+[
+ "SDL (1996)",
+"MoDS (1998)",
+1,
+0 
+],
+[
+ "CMUS (1996)",
+"NEZ (1998)",
+2,
+0.01 
+],
+[
+ "MNS-HSS (1996)",
+"NEZ (1998)",
+1,
+0.01 
+],
+[
+ "NEZ (1996)",
+"NEZ (1998)",
+25,
+0.15 
+],
+[
+ "PB (1996)",
+"NEZ (1998)",
+2,
+0.03 
+],
+[
+ "SD-LSNS (1996)",
+"NEZ (1998)",
+3,
+0.01 
+],
+[
+ "SZ (1996)",
+"NEZ (1998)",
+1,
+0 
+],
+[
+ "DEU (1996)",
+"ODA (1998)",
+1,
+0 
+],
+[
+ "SD-LSNS (1996)",
+"ODA (1998)",
+2,
+0.01 
+],
+[
+ "CMUS (1996)",
+"OK-PK (1998)",
+5,
+0.02 
+],
+[
+ "DEU (1996)",
+"OK-PK (1998)",
+1,
+0 
+],
+[
+ "DZJ (1996)",
+"OK-PK (1998)",
+1,
+0 
+],
+[
+ "LB (1996)",
+"OK-PK (1998)",
+1,
+0 
+],
+[
+ "SZ (1996)",
+"OK-PK (1998)",
+1,
+0 
+],
+[
+ "PB (1996)",
+"PB (1998)",
+11,
+0.19 
+],
+[
+ "SD-LSNS (1996)",
+"SZ (1998)",
+1,
+0 
+],
+[
+ "SZ (1996)",
+"SZ (1998)",
+87,
+0.43 
+],
+[
+ "CAO (1996)",
+"US (1998)",
+1,
+0.01 
+],
+[
+ "MNS-HSS (1996)",
+"US (1998)",
+2,
+0.02 
+],
+[
+ "SD-LSNS (1996)",
+"US (1998)",
+1,
+0 
+] 
+];
+data.addColumn('string','source');
+data.addColumn('string','target');
+data.addColumn('number','candidates');
+data.addColumn('number','percentage');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartSankeyID13b42dd363a6() {
+var data = gvisDataSankeyID13b42dd363a6();
+var options = {};
+options["width"] =    800;
+options["height"] =    615;
+
+
+    var chart = new google.visualization.Sankey(
+    document.getElementById('SankeyID13b42dd363a6')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "sankey";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartSankeyID13b42dd363a6);
+})();
+function displayChartSankeyID13b42dd363a6() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID13b42dd363a6"></script>
+
+
+<!-- divChart -->
+  
+<div id="SankeyID13b42dd363a6" 
+  style="width: 800; height: 615;">
+</div>
+
+
+</body>
+</html>
