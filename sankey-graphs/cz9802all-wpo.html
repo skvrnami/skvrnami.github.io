@@ -1,0 +1,333 @@
+<html>
+<body>
+<!-- Sankey generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Thu Feb 04 14:33:36 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataSankeyID113437d745b4 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "CSNS (1998)",
+"CZ (2002)",
+1,
+0.4 
+],
+[
+ "CSNS (1998)",
+"CSNS (2002)",
+73,
+26.3 
+],
+[
+ "CSSD (1998)",
+"CSSD (2002)",
+103,
+34.8 
+],
+[
+ "DEU (1998)",
+"CZ (2002)",
+1,
+0.4 
+],
+[
+ "DEU (1998)",
+"SZ (2002)",
+1,
+0.4 
+],
+[
+ "DEU (1998)",
+"Koalice (2002)",
+14,
+5.1 
+],
+[
+ "DZJ (1998)",
+"SV SOS (2002)",
+3,
+1.3 
+],
+[
+ "DZJ (1998)",
+"SZJ (2002)",
+36,
+15 
+],
+[
+ "KDU-CSL (1998)",
+"Koalice (2002)",
+60,
+20.1 
+],
+[
+ "KDU-CSL (1998)",
+"PB (2002)",
+1,
+0.3 
+],
+[
+ "KDU-CSL (1998)",
+"SZJ (2002)",
+1,
+0.3 
+],
+[
+ "KSCM (1998)",
+"KSCM (2002)",
+93,
+31.2 
+],
+[
+ "MoDS (1998)",
+"CZ (2002)",
+1,
+0.9 
+],
+[
+ "MoDS (1998)",
+"MoDS (2002)",
+30,
+26.3 
+],
+[
+ "MoDS (1998)",
+"SZJ (2002)",
+8,
+7 
+],
+[
+ "NEZ (1998)",
+"CZ (2002)",
+11,
+6.1 
+],
+[
+ "NEZ (1998)",
+"CSNS (2002)",
+5,
+2.8 
+],
+[
+ "NEZ (1998)",
+"CSSD (2002)",
+1,
+0.6 
+],
+[
+ "ODS (1998)",
+"ODS (2002)",
+96,
+32.2 
+],
+[
+ "ODS (1998)",
+"SNK (2002)",
+1,
+0.3 
+],
+[
+ "OK-PK (1998)",
+"ODA (2002)",
+1,
+0.4 
+],
+[
+ "OK-PK (1998)",
+"PB (2002)",
+6,
+2.6 
+],
+[
+ "PB (1998)",
+"PB (2002)",
+3,
+17.6 
+],
+[
+ "SDCR (1998)",
+"RMS (2002)",
+1,
+6.3 
+],
+[
+ "SPR-RSC (1998)",
+"CSDH (2002)",
+1,
+0.3 
+],
+[
+ "SPR-RSC (1998)",
+"CSNS (2002)",
+1,
+0.3 
+],
+[
+ "SPR-RSC (1998)",
+"NDS (2002)",
+3,
+1 
+],
+[
+ "SPR-RSC (1998)",
+"PB (2002)",
+2,
+0.7 
+],
+[
+ "SPR-RSC (1998)",
+"REP (2002)",
+18,
+6 
+],
+[
+ "SPR-RSC (1998)",
+"RMS (2002)",
+64,
+21.5 
+],
+[
+ "SPR-RSC (1998)",
+"SZ (2002)",
+1,
+0.3 
+],
+[
+ "SZ (1998)",
+"CZ (2002)",
+3,
+1.1 
+],
+[
+ "SZ (1998)",
+"ODA (2002)",
+1,
+0.4 
+],
+[
+ "SZ (1998)",
+"SZ (2002)",
+74,
+27.8 
+],
+[
+ "US (1998)",
+"CSNS (2002)",
+1,
+0.3 
+],
+[
+ "US (1998)",
+"SNK (2002)",
+1,
+0.3 
+],
+[
+ "US (1998)",
+"US-DEU (2002)",
+44,
+14.8 
+],
+[
+ "ODA (1998)",
+"ODA (2002)",
+59,
+30.4 
+],
+[
+ "ODA (1998)",
+"ODS (2002)",
+2,
+1 
+] 
+];
+data.addColumn('string','source');
+data.addColumn('string','target');
+data.addColumn('number','candidates');
+data.addColumn('number','percentage');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartSankeyID113437d745b4() {
+var data = gvisDataSankeyID113437d745b4();
+var options = {};
+options["width"] =    800;
+options["height"] =    615;
+
+
+    var chart = new google.visualization.Sankey(
+    document.getElementById('SankeyID113437d745b4')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "sankey";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartSankeyID113437d745b4);
+})();
+function displayChartSankeyID113437d745b4() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID113437d745b4"></script>
+
+
+<!-- divChart -->
+  
+<div id="SankeyID113437d745b4" 
+  style="width: 800; height: 615;">
+</div>
+
+
+</body>
+</html>
