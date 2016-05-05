@@ -1,0 +1,231 @@
+<html>
+<body>
+<!-- Sankey generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Sun Apr 17 11:35:52 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataSankeyID16d43f5971f5 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "B-RRS (1998)",
+"B-RRS (2002)",
+11,
+0.44 
+],
+[
+ "B-RRS (1998)",
+"SNJ (2002)",
+1,
+0.04 
+],
+[
+ "HTC (1998)",
+"LB (2002)",
+1,
+0.04 
+],
+[
+ "JSPS (1998)",
+"LB (2002)",
+1,
+0.03 
+],
+[
+ "KSS (1998)",
+"KSS (2002)",
+36,
+0.26 
+],
+[
+ "MLHZP (1998)",
+"KSS (2002)",
+1,
+0.01 
+],
+[
+ "MLHZP (1998)",
+"LS (2002)",
+1,
+0.01 
+],
+[
+ "MLHZP (1998)",
+"ROISR (2002)",
+1,
+0.01 
+],
+[
+ "NASR (1998)",
+"NOSNP (2002)",
+1,
+0.02 
+],
+[
+ "NASR (1998)",
+"ROSA (2002)",
+1,
+0.02 
+],
+[
+ "NS (1998)",
+"ANO (2002)",
+1,
+0.01 
+],
+[
+ "NS (1998)",
+"HZD (2002)",
+1,
+0.01 
+],
+[
+ "NS (1998)",
+"LB (2002)",
+1,
+0.01 
+],
+[
+ "NS (1998)",
+"ROSA (2002)",
+4,
+0.05 
+],
+[
+ "SLS (1998)",
+"SNJ (2002)",
+1,
+0.02 
+],
+[
+ "SLS (1998)",
+"SNS (2002)",
+3,
+0.05 
+],
+[
+ "SNJ (1998)",
+"LS (2002)",
+1,
+0.04 
+],
+[
+ "SNJ (1998)",
+"SNJ (2002)",
+4,
+0.16 
+],
+[
+ "ZRS (1998)",
+"LB (2002)",
+7,
+0.05 
+],
+[
+ "ZRS (1998)",
+"ROSA (2002)",
+1,
+0.01 
+],
+[
+ "ZRS (1998)",
+"SMER (2002)",
+2,
+0.01 
+],
+[
+ "ZRS (1998)",
+"ZRS (2002)",
+8,
+0.05 
+] 
+];
+data.addColumn('string','source');
+data.addColumn('string','target');
+data.addColumn('number','candidates');
+data.addColumn('number','percentage');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartSankeyID16d43f5971f5() {
+var data = gvisDataSankeyID16d43f5971f5();
+var options = {};
+options["width"] =   650;
+options["height"] =    615;
+
+
+    var chart = new google.visualization.Sankey(
+    document.getElementById('SankeyID16d43f5971f5')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "sankey";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartSankeyID16d43f5971f5);
+})();
+function displayChartSankeyID16d43f5971f5() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID16d43f5971f5"></script>
+
+
+<!-- divChart -->
+  
+<div id="SankeyID16d43f5971f5" 
+  style="width: 650; height: 615;">
+</div>
+
+
+</body>
+</html>

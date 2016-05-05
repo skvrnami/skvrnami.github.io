@@ -1,0 +1,165 @@
+<html>
+<body>
+<!-- Sankey generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Thu May 05 11:31:25 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataSankeyID13445d9e6c7 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "DS (1994)",
+"HZDS (1998)",
+1,
+1 
+],
+[
+ "DS (1994)",
+"SDK (1998)",
+8,
+1 
+],
+[
+ "DS (1994)",
+"SOP (1998)",
+4,
+1 
+],
+[
+ "KSS (1994)",
+"KSS (1998)",
+46,
+1 
+],
+[
+ "KSS (1994)",
+"Nase Slovensko (1998)",
+1,
+1 
+],
+[
+ "KSUS (1994)",
+"SLS (1998)",
+3,
+1 
+],
+[
+ "KSUS (1994)",
+"SNS (1998)",
+20,
+1 
+],
+[
+ "KSUS (1994)",
+"SOP (1998)",
+1,
+1 
+],
+[
+ "ROISR (1994)",
+"HZDS (1998)",
+1,
+1 
+],
+[
+ "SD (1994)",
+"HTC (1998)",
+3,
+1 
+],
+[
+ "SD (1994)",
+"HZDS (1998)",
+1,
+1 
+] 
+];
+data.addColumn('string','source');
+data.addColumn('string','target');
+data.addColumn('number','number');
+data.addColumn('number','minor1');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartSankeyID13445d9e6c7() {
+var data = gvisDataSankeyID13445d9e6c7();
+var options = {};
+options["width"] =    650;
+options["height"] =    615;
+
+
+    var chart = new google.visualization.Sankey(
+    document.getElementById('SankeyID13445d9e6c7')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "sankey";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartSankeyID13445d9e6c7);
+})();
+function displayChartSankeyID13445d9e6c7() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID13445d9e6c7"></script>
+
+
+<!-- divChart -->
+  
+<div id="SankeyID13445d9e6c7" 
+  style="width: 650; height: 615;">
+</div>
+
+
+</body>
+</html>
