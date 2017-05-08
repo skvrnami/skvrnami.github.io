@@ -67,7 +67,7 @@ p.subtitle { font-style: italic;
              display: block;
              line-height: 1; }
 
-.numeral { font-family: et-book-roman-old-style; }
+.numeral { font-family: "Palatino Linotype"; }
 
 .danger { color: red; }
 
@@ -100,8 +100,10 @@ div.epigraph > blockquote > footer > cite { font-style: italic; }
 
 blockquote { font-size: 1.4rem; }
 
+/*
 blockquote p { width: 55%;
                margin-right: 40px; }
+*/ 
 
 blockquote footer { width: 55%;
                     font-size: 1.1rem;
@@ -173,7 +175,7 @@ img { max-width: 100%; }
 .sidenote-number { counter-increment: sidenote-counter; }
 
 .sidenote-number:after, .sidenote:before { content: counter(sidenote-counter) " ";
-                                           font-family: et-book-roman-old-style;
+                                           font-family: "Palatino Linotype";
                                            position: relative;
                                            vertical-align: baseline; }
 
@@ -185,7 +187,7 @@ img { max-width: 100%; }
 .sidenote:before { content: counter(sidenote-counter) " ";
                    top: -0.5rem; }
 
-blockquote .sidenote, blockquote .marginnote { margin-right: -82%;
+blockquote .sidenote, blockquote .marginnote { margin-right: -70%;
                                                min-width: 59%;
                                                text-align: left; }    
 
