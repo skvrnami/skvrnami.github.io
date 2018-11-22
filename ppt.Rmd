@@ -1,0 +1,101 @@
+---
+title: "Mezistranická a vnitrostranická mobilita kandidátů"
+author: "Michael Škvrňák"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default", "custom.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: center, middle
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+ 
+# Jak se kandidáti přesunují mezi stranami a mezi úrovněmi politiky? 
+# A proč?
+
+---
+
+## Kde jsme?
+
+### horizontální mobilita 
+
+typicky vysvětlení rozštěpení parlamentní strany
+
+### vertikální mobilita
+
+deskripce kariérních cest v jednotlivých zemích
+
+---
+class: center, middle
+
+## Relevance?
+
+![https://g.cz/kvalifikace-za-vsechny-prachy-nova-ministryne-spravedlnosti-tatana-mala-psala-diplomku-o-chovu-kraliku/](https://g.cz/sites/default/files/styles/hp_-_clanek_velky_608x418/public/field/image/2018/7149453-brno-volby-jmk-jihomoravsky-kraj-podpis-koalice-smlouva-tatana-mala_galerie-980.jpg?itok=UsfZNY0B)
+
+---
+
+## Sběr dat
+
+![](data-matching.png)
+---
+
+## Sběr dat #2
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE  }
+library(dplyr)
+nasa <- readr::read_csv("nasa.csv")
+nasa %>% slice(., c(109:118, 135:136)) %>% 
+    select(person_id, data, first_name, 
+           last_name, age, member_party, 
+           nominate_party) %>%
+    mutate(year = gsub("municipal_", "", data)) %>%
+    select(-data) %>%
+    knitr::kable(., format="html")
+```
+
+---
+
+## Jak to budu dělat?
+
+![](regression-regression-everywhere.jpg)
+
+---
+
+## Vertikální mobilita
+
+### Individuální charakteristiky
+(věk, gender, zkušenost ve volené funkci, úspěšnost na nižší úrovni)
+
+### Změna strany
+
+### Způsob selekce kandidátů v rámci strany
+
+...
+
+---
+
+## Horizontální mobilita
+
+### Individuální charakteristiky
+(věk, gender, ... )
+
+### Změna ideologické pozice strany 
+
+### Změna volební podpory strany
+
+...
+
+---
+class: center, middle, inverse
+
+![](otzky.jpg)
+
+
+

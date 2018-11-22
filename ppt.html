@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mezistranická a vnitrostranická mobilita kandidátů</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Michael Škvrňák" />
+    <meta name="date" content="2018-11-22" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Mezistranická a vnitrostranická mobilita kandidátů
+### Michael Škvrňák
+### 2018-11-22
+
+---
+
+class: center, middle
+
+
+ 
+# Jak se kandidáti přesunují mezi stranami a mezi úrovněmi politiky? 
+# A proč?
+
+---
+
+## Kde jsme?
+
+### horizontální mobilita 
+
+typicky vysvětlení rozštěpení parlamentní strany
+
+### vertikální mobilita
+
+deskripce kariérních cest v jednotlivých zemích
+
+---
+class: center, middle
+
+## Relevance?
+
+![https://g.cz/kvalifikace-za-vsechny-prachy-nova-ministryne-spravedlnosti-tatana-mala-psala-diplomku-o-chovu-kraliku/](https://g.cz/sites/default/files/styles/hp_-_clanek_velky_608x418/public/field/image/2018/7149453-brno-volby-jmk-jihomoravsky-kraj-podpis-koalice-smlouva-tatana-mala_galerie-980.jpg?itok=UsfZNY0B)
+
+---
+
+## Sběr dat
+
+![](data-matching.png)
+---
+
+## Sběr dat #2
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:right;"&gt; person_id &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; first_name &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; last_name &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; age &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; member_party &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; nominate_party &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; year &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 70126 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Milan &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Chvojka &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 28 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; BEZPP &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ODS &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1994 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 70126 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Milan &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Chvojka &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 32 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; BEZPP &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ODS &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1998 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 70126 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Milan &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Chvojka &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 36 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; BEZPP &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ODS &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2002 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 70126 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Milan &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Chvojka &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 40 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; BEZPP &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ODS &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2006 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 70126 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Milan &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Chvojka &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 44 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; BEZPP &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ODS &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2010 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 70126 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Milan &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Chvojka &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 48 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; BEZPP &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ANO &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2014 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 70126 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Milan &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Chvojka &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 52 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; BEZPP &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ANO &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2018 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 352597 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Marie &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Chvojková &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 50 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; BEZPP &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ČSSD &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2006 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 70134 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Pavel &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Janeček &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 50 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ODS &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ODS &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1994 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 70134 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Pavel &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Janeček &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 54 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; BEZPP &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; US-DEU &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1998 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 70149 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; František &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Jeníček &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 56 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; KDU-ČSL &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; KDU-ČSL &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1994 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 70149 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; František &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Jeníček &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 68 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; KDU-ČSL &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; KDU-ČSL &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2006 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+## Jak to budu dělat?
+
+![](regression-regression-everywhere.jpg)
+
+---
+
+## Vertikální mobilita
+
+### Individuální charakteristiky
+(věk, gender, zkušenost ve volené funkci, úspěšnost na nižší úrovni)
+
+### Změna strany
+
+### Způsob selekce kandidátů v rámci strany
+
+...
+
+---
+
+## Horizontální mobilita
+
+### Individuální charakteristiky
+(věk, gender, ... )
+
+### Změna ideologické pozice strany 
+
+### Změna volební podpory strany
+
+...
+
+---
+class: center, middle, inverse
+
+![](otzky.jpg)
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
