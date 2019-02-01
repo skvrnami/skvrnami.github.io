@@ -1,0 +1,42 @@
+p, h1, h2, h3 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+div {
+    font-size: 25px;
+}
+
+.remark-slide-content {
+
+    font-size: 25px;
+
+}
+
+table {
+    font-size: 20px;
+}
+
+.inverse {
+    color: white;
+}
+
+.title-slide {
+    color: black;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+.remark-slide table thead th { border-bottom: 1px solid #ddd; 
+}
+
+.remark-slide caption { padding-top: 20px;
+}
+th { padding: 2px; }
