@@ -1,0 +1,101 @@
+<html>
+<head>
+    <script src=papaparse.min.js></script> 
+    <script>
+    
+    function getRandomSubarray(arr, size) {
+        var shuffled = arr.slice(0), i = arr.length, temp, index;
+        while (i--) {
+            index = Math.floor((i + 1) * Math.random());
+            temp = shuffled[index][1];
+            shuffled[index] = shuffled[i];
+            shuffled[i] = temp;
+        }
+        return shuffled.slice(0, size);
+    }
+
+    function removeLoadingMessage() {
+        var elem = document.getElementById("loading");
+        elem.parentNode.removeChild(elem);
+    };
+
+    function appendLoadingMessage() {
+        var node = document.createElement("p");
+        var textnode = document.createTextNode("generuju playlist... pls wait");
+        document.getElementById("loading").appendChild(node);
+    };
+
+    function removePreviousList() {
+        var elem = document.getElementsByTagName("ul");
+        if(elem.length > 0){
+            elem[0].parentNode.removeChild(elem[0])
+        }
+    };
+
+    function appendPlaylist(arr, playlistId){
+        removePreviousList();
+
+        var ul = document.createElement("ul");
+        document.getElementById(playlistId).appendChild(ul)
+
+        for (i = 0; i < arr.length; i++) {
+            var node = document.createElement("li");
+            var textnode = document.createTextNode(arr[i]);
+            node.appendChild(textnode);
+            document.getElementsByTagName("ul")[0].appendChild(node);
+        };
+    };
+
+    function checkStation(record, stations) {
+        return stations.indexOf(record[0]) >= 0
+    };
+
+    function generatePlaylist() {
+
+        Papa.parse("sample-data-min.csv", {
+        download: true,
+        complete: function(results, file) {
+
+            var n = parseInt(document.getElementById("tracks").value)
+            var stations = [];
+            if(document.getElementById("RZ").checked){
+                stations.push("radiozurnal")
+            }
+
+            if(document.getElementById("DJ").checked){
+                stations.push("dvojka")
+            }
+
+            if(document.getElementById("RW").checked){
+                stations.push("radiowave")
+            }
+
+            console.log(stations);
+            var filteredData = results["data"].filter(function(x) {return stations.indexOf(x[0]) >= 0})
+            console.log(filteredData);
+            var playlist = getRandomSubarray(filteredData, n);
+            appendPlaylist(playlist, "playlist");
+            
+        }})
+    };
+    </script>
+</head>
+<body>
+    <div>
+        <form>
+        Počet skladeb:<br>
+        <input type="number" value="10" id="tracks"><br>
+        Stanice:<br>
+        <input type="checkbox" id="RZ" value="radiozurnal">Radiožurnál<br>
+        <input type="checkbox" id="DJ" value="dvojka">Dvojka<br>
+        <input type="checkbox" id="RW" value="radiowave">Radio Wave<br>
+        </form>
+        <button onclick="generatePlaylist();">Vygeneruj playlist</button>
+    </div>
+    <div id="loading">
+    </div>
+    <div id="playlist">
+    </div>
+</body>
+
+</html>
