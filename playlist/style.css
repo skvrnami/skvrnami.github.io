@@ -50,4 +50,6 @@ h1 {
     text-align: center;
     margin-top: auto;
     width: 30%;
+    font-size: 14px;
+    color: gray;
 }
