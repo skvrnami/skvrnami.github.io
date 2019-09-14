@@ -50,12 +50,13 @@
 
     function generatePlaylist() {
 
-        Papa.parse("sample-data-min2.csv", {
+        Papa.parse("sample-data-min3.csv", {
         download: true,
         complete: function(results, file) {
 
             var n = parseInt(document.getElementById("tracks").value)
             var stations = [];
+            var genres = [];
             if(document.getElementById("RZ").checked){
                 stations.push("radiozurnal")
             }
@@ -76,12 +77,47 @@
                 stations.push("radiojunior")
             }
 
-            if(document.getElementById("REGION").checked){
+                        if(document.getElementById("REGION").checked){
                 stations.push("region")
             }
 
+            if(document.getElementById("pop").checked){
+                genres.push("pop")
+            }
+
+            if(document.getElementById("rock").checked){
+                genres.push("rock")
+            }
+
+            if(document.getElementById("electro").checked){
+                genres.push("electronic")
+            }
+
+            if(document.getElementById("jazz").checked){
+                genres.push("jazz")
+            }
+
+            if(document.getElementById("hiphop").checked){
+                genres.push("hip-hop")
+            }
+
+            if(document.getElementById("core").checked){
+                genres.push("*core")
+            }
+
+            if(document.getElementById("hiphop").checked){
+                genres.push("hip-hop")
+            }
+
+            if(document.getElementById("classic").checked){
+                genres.push("classical")
+            }
+
+
             var filteredData = results["data"].filter(function(x) {return stations.indexOf(x[0]) >= 0})
-            var playlist = getRandomSubarray(filteredData, n);
+            var data = filteredData.filter(function(x) {return genres.indexOf(x[2]) >= 0})
+            
+            var playlist = getRandomSubarray(data, n);
 
             appendPlaylist(playlist, "playlist");
             
@@ -97,13 +133,12 @@
         <p><i>"The worst thing ever to happen to music"</i> je jedno z označení žánru, který podle <a href="https://www.last.fm/">last.fm</a> provozuje Helena Vondráčková. A generování náhodných playlistů ze skladeb hraných na stanicích ČRo asi taky není nejlepší nápad. Ale co už. </p>
         </div>
         <div class="box">
-            <form>
                 <p>
-                <b>Počet skladeb:</b><br>
+                <b>Zvol počet skladeb:</b><br>
                 <input type="number" value="8" id="tracks"><br>
                 </p>
                 <p>
-                <b>Stanice:</b><br>
+                <b>Zvol stanice:</b><br>
                     <table>
                         <tr>
                             <td>
@@ -128,8 +163,42 @@
                             </td>
                         </tr>
                     </table>
-                </form>
                 </p>
+                <p>
+                <b>Zvol žánr:</b><br>
+                <span class="note">Podle dat z <a href="https://www.last.fm/">last.fm</a></span>
+                    <table>
+                        <tr>
+                            <td>
+                            <input type="checkbox" id="pop" value="pop" checked>pop
+                            </td>
+                            <td>
+                            <input type="checkbox" id="rock" value="rock" checked>rock
+                            </td>
+                            <td> 
+                            <input type="checkbox" id="electro" value="electronic" checked>electro
+                            </td>
+                            <td> 
+                            <input type="checkbox" id="jazz" value="jazz" checked>jazz
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <input type="checkbox" id="hiphop" value="hip-hop" checked>hip-hop
+                            </td>
+                            <td>
+                            <input type="checkbox" id="classic" value="classical" checked>classical
+                            </td>
+                            <td>
+                            <input type="checkbox" id="core" value="*core" checked>*core
+                            </td>
+                            <td> 
+                            <input type="checkbox" id="other" value="other" checked>ostatní/neznámý
+                            </td>
+                        </tr>
+                    </table>
+                </p>
+
                 <button onclick="generatePlaylist();">Vygeneruj playlist</button>
         </div>
         <div class="box" id="playlist">

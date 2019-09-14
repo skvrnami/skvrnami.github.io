@@ -40,6 +40,16 @@ h1 {
     text-align: center;
 }
 
+td {
+    width: 200px;
+}
+
+.note {
+    margin-top: 2px;
+    font-size: 14px;
+    color: gray;
+}
+
 /*
 #playlist {
     height: 75%;
