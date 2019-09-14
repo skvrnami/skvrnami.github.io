@@ -1,5 +1,7 @@
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet"> 
     <script src=papaparse.min.js></script> 
     <script>
     
@@ -12,17 +14,6 @@
             shuffled[i] = temp;
         }
         return shuffled.slice(0, size);
-    }
-
-    function removeLoadingMessage() {
-        var elem = document.getElementById("loading");
-        elem.parentNode.removeChild(elem);
-    };
-
-    function appendLoadingMessage() {
-        var node = document.createElement("p");
-        var textnode = document.createTextNode("generuju playlist... pls wait");
-        document.getElementById("loading").appendChild(node);
     };
 
     function removePreviousList() {
@@ -40,19 +31,25 @@
 
         for (i = 0; i < arr.length; i++) {
             var node = document.createElement("li");
-            var textnode = document.createTextNode(arr[i]);
-            node.appendChild(textnode);
-            document.getElementsByTagName("ul")[0].appendChild(node);
-        };
-    };
+            
+            //var textnode = document.createTextNode(arr[i]);
+            //node.appendChild(textnode);
+            //document.getElementsByTagName("ul")[0].appendChild(node);
 
-    function checkStation(record, stations) {
-        return stations.indexOf(record[0]) >= 0
+            var a = document.createElement('a');
+            var linkText = document.createTextNode(arr[i]);
+            a.appendChild(linkText);
+            a.title = arr[i];
+            a.href = "https://www.youtube.com/results?search_query=" + arr[i];
+            a.target = "_blank";
+            document.getElementsByTagName("ul")[0].appendChild(node).appendChild(a);
+
+        };
     };
 
     function generatePlaylist() {
 
-        Papa.parse("sample-data-min.csv", {
+        Papa.parse("sample-data-min2.csv", {
         download: true,
         complete: function(results, file) {
 
@@ -70,10 +67,21 @@
                 stations.push("radiowave")
             }
 
-            console.log(stations);
+            if(document.getElementById("JAZZ").checked){
+                stations.push("jazz")
+            }
+
+            if(document.getElementById("JUNIOR").checked){
+                stations.push("radiojunior")
+            }
+
+            if(document.getElementById("REGION").checked){
+                stations.push("region")
+            }
+
             var filteredData = results["data"].filter(function(x) {return stations.indexOf(x[0]) >= 0})
-            console.log(filteredData);
             var playlist = getRandomSubarray(filteredData, n);
+
             appendPlaylist(playlist, "playlist");
             
         }})
@@ -81,21 +89,55 @@
     </script>
 </head>
 <body>
-    <div>
-        <form>
-        Počet skladeb:<br>
-        <input type="number" value="10" id="tracks"><br>
-        Stanice:<br>
-        <input type="checkbox" id="RZ" value="radiozurnal">Radiožurnál<br>
-        <input type="checkbox" id="DJ" value="dvojka">Dvojka<br>
-        <input type="checkbox" id="RW" value="radiowave">Radio Wave<br>
-        </form>
-        <button onclick="generatePlaylist();">Vygeneruj playlist</button>
+    <div class="content">
+        <div class="box">
+        <h1>The Worst Thing Ever to Happen to Music</h1>
+        <p>Vygeneruj si náhodný playlist ze skladeb, které zazněly ve vysílání stanic Českého rozhlasu mezi&nbsp;1.&nbsp;lednem a 1. zářím 2019. Aspoň podle dat dostupných <a href="https://data.irozhlas.cz/opendata/">tady</a>.</p>
+        <p>"the worst thing ever to happen to music" je jedno z označení žánru, který podle <a href="https://www.last.fm/">last.fm</a> provozuje Helena Vondráčková. A generování náhodných playlistů ze skladeb hraných na stanicích ČRo asi taky není nejlepší nápad. Ale co už. </p>
+        </div>
+        <div class="box">
+            <form>
+                <p>
+                <b>Počet skladeb:</b><br>
+                <input type="number" value="8" id="tracks"><br>
+                </p>
+                <p>
+                <b>Stanice:</b><br>
+                    <table>
+                        <tr>
+                            <td>
+                            <input type="checkbox" id="RZ" value="radiozurnal">Radiožurnál
+                            </td>
+                            <td>
+                            <input type="checkbox" id="DJ" value="dvojka">Dvojka
+                            </td>
+                            <td> 
+                            <input type="checkbox" id="RW" value="radiowave" checked>Radio Wave
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <input type="checkbox" id="JAZZ" value="jazz">Jazz
+                            </td>
+                            <td>
+                            <input type="checkbox" id="JUNIOR" value="radiojunior">Junior
+                            </td>
+                            <td>
+                            <input type="checkbox" id="REGION" value="region">Regionální stanice
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                </p>
+                <button onclick="generatePlaylist();">Vygeneruj playlist</button>
+        </div>
+        <div class="box" id="playlist">
+        </div>
+        <div class="box" id="footer">
+        <p>made by <a href="https://twitter.com/skvrnami/">@skvrnami</a> at <a href="https://hackujstat.cz/">#hackujstat</a></p>
     </div>
-    <div id="loading">
     </div>
-    <div id="playlist">
-    </div>
+    
 </body>
 
 </html>
