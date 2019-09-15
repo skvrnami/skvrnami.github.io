@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>The Worst Thing Ever to Happen to Music</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="morbid.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet"> 
     <script src=papaparse.min.js></script> 
     <script>
@@ -50,7 +50,7 @@
 
     function generatePlaylist() {
 
-        Papa.parse("sample-data-min3.csv", {
+        Papa.parse("sample-data-dead.csv", {
         download: true,
         complete: function(results, file) {
 
@@ -77,7 +77,7 @@
                 stations.push("radiojunior")
             }
 
-                        if(document.getElementById("REGION").checked){
+            if(document.getElementById("REGION").checked){
                 stations.push("region")
             }
 
@@ -113,10 +113,30 @@
                 genres.push("classical")
             }
 
+            var dead;
+            if (document.getElementById("dead0").checked) {
+                dead = parseInt(document.getElementById("dead0").value);
+            }
+
+            if (document.getElementById("dead1").checked) {
+                dead = parseInt(document.getElementById("dead1").value);
+            }
+
+            if (document.getElementById("dead2").checked) {
+                dead = parseInt(document.getElementById("dead2").value);
+            }
 
             var filteredData = results["data"].filter(function(x) {return stations.indexOf(x[0]) >= 0})
-            var data = filteredData.filter(function(x) {return genres.indexOf(x[2]) >= 0})
+            if(genres.length != 8){
+                var data = filteredData.filter(function(x) {return genres.indexOf(x[2]) >= 0})
+            }else{
+                var data = filteredData.slice();
+            }
             
+            if(dead != 2){
+                data = data.filter(function(x) {return x[3] == dead})
+            }
+
             var playlist = getRandomSubarray(data, n);
 
             appendPlaylist(playlist, "playlist");
@@ -128,7 +148,7 @@
 <body>
     <div class="content">
         <div class="box">
-        <h1>The Worst Thing Ever to Happen to Music</h1>
+        <h1>☠️ The Worst Thing Ever to Happen to Music ☠️</h1>
         <p>Vygeneruj si náhodný playlist ze skladeb, které zazněly ve vysílání stanic Českého rozhlasu mezi&nbsp;1.&nbsp;lednem a 1. zářím 2019. Aspoň podle dat dostupných <a href="https://data.irozhlas.cz/opendata/">tady</a>.</p>
         <p><i>"The worst thing ever to happen to music"</i> je jedno z označení žánru, který podle <a href="https://www.last.fm/">last.fm</a> provozuje Helena Vondráčková. A generování náhodných playlistů ze skladeb hraných na stanicích ČRo asi taky není nejlepší nápad. Ale co už. </p>
         </div>
@@ -198,6 +218,23 @@
                         </tr>
                     </table>
                 </p>
+                <p>
+                <b>Mají být interpreti:</b><br>
+                <span class="note">Podle dat z <a href="https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana">Wikipedie</a> (aktuální k září 2019), nefunguje pro vícečlenná uskupení</span>
+                <table>
+                    <tr>
+                    <td>
+                    <input type="radio" id="dead0" name="dead" value="0"> Mrtví
+                    </td>
+                    <td>
+                    <input type="radio" id="dead1" name="dead" value="1"> Živí
+                    </td>
+                    <td>
+                    <input type="radio" id="dead2" name="dead" value="2" checked> To je jedno
+                    </td>
+                    </tr>
+                </table>
+                </p>
 
                 <button onclick="generatePlaylist();">Vygeneruj playlist</button>
         </div>
@@ -205,7 +242,7 @@
         </div>
         <div class="box" id="footer">
         <p>
-        <a href="/morbid.html">morbidní verze</a><br>
+        <a href="/">nemorbidní verze</a><br>
         vytvořeno <a href="https://twitter.com/skvrnami/">@skvrnami</a> na <a href="https://hackujstat.cz/">#hackujstat</a></p>
     </div>
     </div>
