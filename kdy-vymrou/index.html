@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet"> 
+    
+    <title>Kdy vymřou</title>
+
+    <style>
+
+        .axis {
+          font: 10px sans-serif;
+        }
+    
+        .axis path,
+        .axis line {
+          fill: none;
+          stroke: #000;
+          shape-rendering: crispEdges;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box {
+            text-align: left;
+            width: 50%;
+        }
+        
+        body {
+            font-family: "Fira Sans", sans-serif;
+        }
+
+        svg {
+            align-items: center;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="content">
+    <h1>Kdy vymřou členové KSČM?</h1>
+    <div class="box">
+    <p>Následující graf ukazuje věkovou strukturu členů KSČM kandidujících ve volbách do obecních zastupitelstev od roku 1994 a 2018. A stručně řečeno vymírání členské základny.</p>
+    <p>Změnu roku provede posuvníkem níže.</p>
+    <div id="root" class="item"></div>
+    </div>
+    </div>
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script src="data.js"></script>
+    <script src="renderChart.js"></script>
+    
+    <script type="text/babel">
+        const e = React.createElement;
+
+        class YearSlider extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = { year: 1994 };
+                this.handleYearChange = this.handleYearChange.bind(this);
+            }
+
+            handleYearChange(e) {
+                this.setState({
+                    year: e.target.value
+                });
+            }
+
+            render() {
+                return (
+                    <div class="item">
+                    <div>
+                        <input id="year" type="range" min="1994" max="2018" step="4" onChange={this.handleYearChange} value={this.state.year} />
+                        <br />
+                        <br />
+                        <b>Věková struktura členů KSČM ve volbách {this.state.year}</b>
+                    
+                    </div>
+                        {renderChart(data, this.state.year)}    
+                    </div>
+                );
+            }
+        }
+
+        const domContainer = document.querySelector('#root');
+        ReactDOM.render(e(YearSlider), domContainer);
+    </script>
+</body>
+
+</html>

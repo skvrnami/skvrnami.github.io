@@ -1,0 +1,2521 @@
+data = [{
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 18,
+  "n": 2
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 19,
+  "n": 3
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 20,
+  "n": 6
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 21,
+  "n": 2
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 22,
+  "n": 2
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 23,
+  "n": 5
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 24,
+  "n": 7
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 25,
+  "n": 10
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 26,
+  "n": 17
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 27,
+  "n": 20
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 28,
+  "n": 24
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 29,
+  "n": 41
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 30,
+  "n": 37
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 31,
+  "n": 54
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 32,
+  "n": 71
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 33,
+  "n": 78
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 34,
+  "n": 96
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 35,
+  "n": 111
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 36,
+  "n": 146
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 37,
+  "n": 175
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 38,
+  "n": 240
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 39,
+  "n": 291
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 40,
+  "n": 355
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 41,
+  "n": 415
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 42,
+  "n": 456
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 43,
+  "n": 478
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 44,
+  "n": 549
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 45,
+  "n": 607
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 46,
+  "n": 611
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 47,
+  "n": 628
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 48,
+  "n": 592
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 49,
+  "n": 441
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 50,
+  "n": 466
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 51,
+  "n": 473
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 52,
+  "n": 390
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 53,
+  "n": 380
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 54,
+  "n": 389
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 55,
+  "n": 301
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 56,
+  "n": 314
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 57,
+  "n": 331
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 58,
+  "n": 312
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 59,
+  "n": 391
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 60,
+  "n": 429
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 61,
+  "n": 390
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 62,
+  "n": 412
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 63,
+  "n": 446
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 64,
+  "n": 414
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 65,
+  "n": 378
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 66,
+  "n": 330
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 67,
+  "n": 299
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 68,
+  "n": 252
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 69,
+  "n": 197
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 70,
+  "n": 162
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 71,
+  "n": 141
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 72,
+  "n": 118
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 73,
+  "n": 87
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 74,
+  "n": 64
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 75,
+  "n": 35
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 76,
+  "n": 10
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 77,
+  "n": 13
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 78,
+  "n": 4
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 79,
+  "n": 3
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 80,
+  "n": 6
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 81,
+  "n": 3
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 82,
+  "n": 2
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 83,
+  "n": 7
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 84,
+  "n": 2
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 86,
+  "n": 3
+}, {
+  "year": 1994,
+  "party_name": "KSČM",
+  "age": 87,
+  "n": 1
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 19,
+  "n": 2
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 20,
+  "n": 4
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 21,
+  "n": 5
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 22,
+  "n": 5
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 23,
+  "n": 9
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 24,
+  "n": 15
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 25,
+  "n": 6
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 26,
+  "n": 9
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 27,
+  "n": 10
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 28,
+  "n": 13
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 29,
+  "n": 16
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 30,
+  "n": 17
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 31,
+  "n": 23
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 32,
+  "n": 24
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 33,
+  "n": 52
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 34,
+  "n": 44
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 35,
+  "n": 71
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 36,
+  "n": 73
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 37,
+  "n": 88
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 38,
+  "n": 95
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 39,
+  "n": 111
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 40,
+  "n": 166
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 41,
+  "n": 172
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 42,
+  "n": 250
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 43,
+  "n": 317
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 44,
+  "n": 363
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 45,
+  "n": 474
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 46,
+  "n": 471
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 47,
+  "n": 525
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 48,
+  "n": 615
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 49,
+  "n": 666
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 50,
+  "n": 696
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 51,
+  "n": 702
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 52,
+  "n": 630
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 53,
+  "n": 535
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 54,
+  "n": 540
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 55,
+  "n": 519
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 56,
+  "n": 476
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 57,
+  "n": 480
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 58,
+  "n": 467
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 59,
+  "n": 371
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 60,
+  "n": 364
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 61,
+  "n": 382
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 62,
+  "n": 353
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 63,
+  "n": 434
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 64,
+  "n": 439
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 65,
+  "n": 402
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 66,
+  "n": 401
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 67,
+  "n": 391
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 68,
+  "n": 388
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 69,
+  "n": 308
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 70,
+  "n": 239
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 71,
+  "n": 226
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 72,
+  "n": 185
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 73,
+  "n": 150
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 74,
+  "n": 127
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 75,
+  "n": 103
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 76,
+  "n": 86
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 77,
+  "n": 46
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 78,
+  "n": 34
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 79,
+  "n": 24
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 80,
+  "n": 4
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 81,
+  "n": 3
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 83,
+  "n": 1
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 84,
+  "n": 1
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 85,
+  "n": 1
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 87,
+  "n": 1
+}, {
+  "year": 1998,
+  "party_name": "KSČM",
+  "age": 88,
+  "n": 1
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 18,
+  "n": 2
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 19,
+  "n": 4
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 20,
+  "n": 6
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 21,
+  "n": 10
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 22,
+  "n": 11
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 23,
+  "n": 7
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 24,
+  "n": 21
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 25,
+  "n": 24
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 26,
+  "n": 25
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 27,
+  "n": 24
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 28,
+  "n": 31
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 29,
+  "n": 24
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 30,
+  "n": 12
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 31,
+  "n": 30
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 32,
+  "n": 28
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 33,
+  "n": 23
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 34,
+  "n": 27
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 35,
+  "n": 26
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 36,
+  "n": 35
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 37,
+  "n": 59
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 38,
+  "n": 61
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 39,
+  "n": 80
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 40,
+  "n": 82
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 41,
+  "n": 106
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 42,
+  "n": 90
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 43,
+  "n": 128
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 44,
+  "n": 168
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 45,
+  "n": 204
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 46,
+  "n": 258
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 47,
+  "n": 305
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 48,
+  "n": 393
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 49,
+  "n": 470
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 50,
+  "n": 521
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 51,
+  "n": 584
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 52,
+  "n": 635
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 53,
+  "n": 721
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 54,
+  "n": 747
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 55,
+  "n": 700
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 56,
+  "n": 669
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 57,
+  "n": 561
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 58,
+  "n": 552
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 59,
+  "n": 538
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 60,
+  "n": 502
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 61,
+  "n": 530
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 62,
+  "n": 466
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 63,
+  "n": 353
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 64,
+  "n": 345
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 65,
+  "n": 343
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 66,
+  "n": 307
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 67,
+  "n": 329
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 68,
+  "n": 332
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 69,
+  "n": 330
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 70,
+  "n": 310
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 71,
+  "n": 284
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 72,
+  "n": 260
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 73,
+  "n": 206
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 74,
+  "n": 136
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 75,
+  "n": 147
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 76,
+  "n": 113
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 77,
+  "n": 84
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 78,
+  "n": 72
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 79,
+  "n": 45
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 80,
+  "n": 26
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 81,
+  "n": 22
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 82,
+  "n": 15
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 83,
+  "n": 3
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 84,
+  "n": 2
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 85,
+  "n": 4
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 86,
+  "n": 1
+}, {
+  "year": 2002,
+  "party_name": "KSČM",
+  "age": 90,
+  "n": 1
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 19,
+  "n": 2
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 20,
+  "n": 5
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 21,
+  "n": 15
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 22,
+  "n": 12
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 23,
+  "n": 13
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 24,
+  "n": 7
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 25,
+  "n": 13
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 26,
+  "n": 23
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 27,
+  "n": 15
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 28,
+  "n": 24
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 29,
+  "n": 25
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 30,
+  "n": 33
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 31,
+  "n": 37
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 32,
+  "n": 41
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 33,
+  "n": 29
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 34,
+  "n": 29
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 35,
+  "n": 33
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 36,
+  "n": 33
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 37,
+  "n": 16
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 38,
+  "n": 26
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 39,
+  "n": 33
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 40,
+  "n": 42
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 41,
+  "n": 65
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 42,
+  "n": 65
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 43,
+  "n": 84
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 44,
+  "n": 101
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 45,
+  "n": 91
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 46,
+  "n": 100
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 47,
+  "n": 117
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 48,
+  "n": 143
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 49,
+  "n": 193
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 50,
+  "n": 239
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 51,
+  "n": 291
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 52,
+  "n": 369
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 53,
+  "n": 451
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 54,
+  "n": 468
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 55,
+  "n": 513
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 56,
+  "n": 591
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 57,
+  "n": 650
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 58,
+  "n": 648
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 59,
+  "n": 667
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 60,
+  "n": 609
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 61,
+  "n": 499
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 62,
+  "n": 508
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 63,
+  "n": 478
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 64,
+  "n": 419
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 65,
+  "n": 417
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 66,
+  "n": 380
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 67,
+  "n": 262
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 68,
+  "n": 230
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 69,
+  "n": 235
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 70,
+  "n": 189
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 71,
+  "n": 224
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 72,
+  "n": 237
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 73,
+  "n": 187
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 74,
+  "n": 206
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 75,
+  "n": 175
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 76,
+  "n": 159
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 77,
+  "n": 107
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 78,
+  "n": 98
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 79,
+  "n": 78
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 80,
+  "n": 48
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 81,
+  "n": 41
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 82,
+  "n": 36
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 83,
+  "n": 18
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 84,
+  "n": 14
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 85,
+  "n": 3
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 86,
+  "n": 2
+}, {
+  "year": 2006,
+  "party_name": "KSČM",
+  "age": 89,
+  "n": 2
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 18,
+  "n": 2
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 19,
+  "n": 5
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 20,
+  "n": 6
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 21,
+  "n": 7
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 22,
+  "n": 11
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 23,
+  "n": 9
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 24,
+  "n": 18
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 25,
+  "n": 14
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 26,
+  "n": 15
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 27,
+  "n": 24
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 28,
+  "n": 18
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 29,
+  "n": 17
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 30,
+  "n": 22
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 31,
+  "n": 25
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 32,
+  "n": 37
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 33,
+  "n": 26
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 34,
+  "n": 46
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 35,
+  "n": 45
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 36,
+  "n": 46
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 37,
+  "n": 36
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 38,
+  "n": 36
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 39,
+  "n": 32
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 40,
+  "n": 29
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 41,
+  "n": 33
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 42,
+  "n": 23
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 43,
+  "n": 43
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 44,
+  "n": 53
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 45,
+  "n": 63
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 46,
+  "n": 67
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 47,
+  "n": 76
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 48,
+  "n": 90
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 49,
+  "n": 93
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 50,
+  "n": 89
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 51,
+  "n": 125
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 52,
+  "n": 139
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 53,
+  "n": 175
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 54,
+  "n": 225
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 55,
+  "n": 278
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 56,
+  "n": 368
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 57,
+  "n": 435
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 58,
+  "n": 427
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 59,
+  "n": 479
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 60,
+  "n": 551
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 61,
+  "n": 570
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 62,
+  "n": 607
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 63,
+  "n": 614
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 64,
+  "n": 534
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 65,
+  "n": 464
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 66,
+  "n": 416
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 67,
+  "n": 372
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 68,
+  "n": 320
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 69,
+  "n": 317
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 70,
+  "n": 287
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 71,
+  "n": 191
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 72,
+  "n": 184
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 73,
+  "n": 157
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 74,
+  "n": 131
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 75,
+  "n": 147
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 76,
+  "n": 167
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 77,
+  "n": 128
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 78,
+  "n": 153
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 79,
+  "n": 98
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 80,
+  "n": 81
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 81,
+  "n": 73
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 82,
+  "n": 48
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 83,
+  "n": 40
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 84,
+  "n": 21
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 85,
+  "n": 21
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 86,
+  "n": 18
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 87,
+  "n": 10
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 88,
+  "n": 9
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 89,
+  "n": 2
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 90,
+  "n": 1
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 93,
+  "n": 1
+}, {
+  "year": 2010,
+  "party_name": "KSČM",
+  "age": 102,
+  "n": 1
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 19,
+  "n": 9
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 20,
+  "n": 11
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 21,
+  "n": 17
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 22,
+  "n": 10
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 23,
+  "n": 13
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 24,
+  "n": 22
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 25,
+  "n": 13
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 26,
+  "n": 13
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 27,
+  "n": 14
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 28,
+  "n": 27
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 29,
+  "n": 28
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 30,
+  "n": 35
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 31,
+  "n": 34
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 32,
+  "n": 29
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 33,
+  "n": 33
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 34,
+  "n": 40
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 35,
+  "n": 48
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 36,
+  "n": 57
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 37,
+  "n": 56
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 38,
+  "n": 55
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 39,
+  "n": 64
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 40,
+  "n": 71
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 41,
+  "n": 52
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 42,
+  "n": 65
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 43,
+  "n": 52
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 44,
+  "n": 44
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 45,
+  "n": 51
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 46,
+  "n": 36
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 47,
+  "n": 50
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 48,
+  "n": 57
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 49,
+  "n": 73
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 50,
+  "n": 89
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 51,
+  "n": 80
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 52,
+  "n": 96
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 53,
+  "n": 99
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 54,
+  "n": 83
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 55,
+  "n": 110
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 56,
+  "n": 149
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 57,
+  "n": 170
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 58,
+  "n": 210
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 59,
+  "n": 262
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 60,
+  "n": 322
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 61,
+  "n": 398
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 62,
+  "n": 403
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 63,
+  "n": 468
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 64,
+  "n": 455
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 65,
+  "n": 508
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 66,
+  "n": 511
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 67,
+  "n": 500
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 68,
+  "n": 454
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 69,
+  "n": 377
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 70,
+  "n": 302
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 71,
+  "n": 259
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 72,
+  "n": 231
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 73,
+  "n": 232
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 74,
+  "n": 201
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 75,
+  "n": 106
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 76,
+  "n": 127
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 77,
+  "n": 108
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 78,
+  "n": 87
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 79,
+  "n": 83
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 80,
+  "n": 81
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 81,
+  "n": 73
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 82,
+  "n": 71
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 83,
+  "n": 57
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 84,
+  "n": 52
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 85,
+  "n": 33
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 86,
+  "n": 19
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 87,
+  "n": 21
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 88,
+  "n": 7
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 89,
+  "n": 8
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 90,
+  "n": 6
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 91,
+  "n": 4
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 92,
+  "n": 1
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 93,
+  "n": 2
+}, {
+  "year": 2014,
+  "party_name": "KSČM",
+  "age": 94,
+  "n": 1
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 18,
+  "n": 2
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 19,
+  "n": 11
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 20,
+  "n": 5
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 21,
+  "n": 8
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 22,
+  "n": 7
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 23,
+  "n": 9
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 24,
+  "n": 13
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 25,
+  "n": 14
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 26,
+  "n": 18
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 27,
+  "n": 11
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 28,
+  "n": 16
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 29,
+  "n": 11
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 30,
+  "n": 17
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 31,
+  "n": 15
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 32,
+  "n": 19
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 33,
+  "n": 26
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 34,
+  "n": 32
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 35,
+  "n": 32
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 36,
+  "n": 36
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 37,
+  "n": 38
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 38,
+  "n": 36
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 39,
+  "n": 36
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 40,
+  "n": 52
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 41,
+  "n": 58
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 42,
+  "n": 52
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 43,
+  "n": 59
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 44,
+  "n": 54
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 45,
+  "n": 63
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 46,
+  "n": 57
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 47,
+  "n": 44
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 48,
+  "n": 46
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 49,
+  "n": 45
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 50,
+  "n": 30
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 51,
+  "n": 46
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 52,
+  "n": 53
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 53,
+  "n": 66
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 54,
+  "n": 70
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 55,
+  "n": 75
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 56,
+  "n": 80
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 57,
+  "n": 89
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 58,
+  "n": 65
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 59,
+  "n": 96
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 60,
+  "n": 143
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 61,
+  "n": 158
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 62,
+  "n": 178
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 63,
+  "n": 216
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 64,
+  "n": 281
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 65,
+  "n": 341
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 66,
+  "n": 326
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 67,
+  "n": 379
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 68,
+  "n": 358
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 69,
+  "n": 393
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 70,
+  "n": 386
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 71,
+  "n": 388
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 72,
+  "n": 333
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 73,
+  "n": 261
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 74,
+  "n": 215
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 75,
+  "n": 199
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 76,
+  "n": 177
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 77,
+  "n": 154
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 78,
+  "n": 139
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 79,
+  "n": 66
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 80,
+  "n": 75
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 81,
+  "n": 64
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 82,
+  "n": 49
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 83,
+  "n": 51
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 84,
+  "n": 53
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 85,
+  "n": 45
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 86,
+  "n": 44
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 87,
+  "n": 37
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 88,
+  "n": 28
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 89,
+  "n": 17
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 90,
+  "n": 13
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 91,
+  "n": 7
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 92,
+  "n": 2
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 93,
+  "n": 2
+}, {
+  "year": 2018,
+  "party_name": "KSČM",
+  "age": 94,
+  "n": 1
+}];
