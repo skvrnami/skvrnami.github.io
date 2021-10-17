@@ -99,14 +99,13 @@ find_track_on_spotify <- function(interpret, track, authorization){
   }
 }
 
-
 TODAY <- as.Date(Sys.Date())
-WEEKDAY <- lubridate::wday(as.Date(Sys.Date()), 
+WEEKDAY <- lubridate::wday(TODAY, 
                            week_start = 1, 
                            locale = "cs_CZ.UTF-8")
 
 START_DATE <- TODAY - WEEKDAY - 6
-END_DATE <- START_DATE + 7
+END_DATE <- START_DATE + 6
 
 args <- commandArgs(trailingOnly = TRUE)
 SPOTIFY_CLIENT_ID <- Sys.getenv("SPOTIFY_CLIENT_ID")
