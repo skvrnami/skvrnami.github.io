@@ -1,5 +1,6 @@
 ---
 output: html_document
+title: Fully Automated Playlist
 ---
 
 <style>
@@ -174,12 +175,12 @@ top_tracks_clustered %>%
   gt() %>%
   fmt_markdown(columns = everything()) %>%
   cols_align("left") %>%
-  tab_header(title = "Fully Automated Playlist", 
+  tab_header(title = "", 
              subtitle = NOTE) %>%
   # tab_source_note(., source_node = NOTE) %>%
   tab_options(
     column_labels.hidden = TRUE,
-    heading.title.font.size = 23,
+    # heading.title.font.size = 23,
     table.font.size = 16
     ) %>%
   opt_table_font(
