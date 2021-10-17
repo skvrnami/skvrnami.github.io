@@ -164,7 +164,7 @@ top_tracks_clustered <- top_tracks %>%
 ```{r, echo=FALSE}
 
 START_DATE_F <- format(START_DATE, "%d.%m.%Y")
-END_DATE_F <- format(START_DATE, "%d.%m.%Y")
+END_DATE_F <- format(END_DATE, "%d.%m.%Y")
 NOTE <- glue::glue("Nejčastěji přehrávané písně na Radiu Wave mezi {START_DATE_F} a {END_DATE_F}")
 
 top_tracks_clustered %>%
