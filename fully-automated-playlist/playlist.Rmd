@@ -1,0 +1,205 @@
+---
+output: html_document
+---
+
+<style>
+
+body {
+  font-family: Overpass Mono;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.playlist {
+  flex: 60%;
+  margin: 2em 2em 0em 0em;
+}
+
+.help {
+  flex: 40%;
+  align-self: end;
+  margin: 2em 0em 0em 0em;
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .playlist, .help {
+    flex: 100%;
+  }
+}
+
+</style>
+
+```{r, message=FALSE, echo=FALSE, include=FALSE}
+library(gt)
+library(dplyr)
+library(rozhlas)
+library(spotifyr)
+
+to_two_digits <- function(x){
+  if(nchar(x) == 1){
+    paste0("0", x)
+  }else{
+    x
+  }
+}
+
+extract_hm <- function(x){
+  tmp <- lubridate::ymd_hms(x, tz = "CET")
+  hour <- to_two_digits(as.character(lubridate::hour(tmp)))
+  mins <- to_two_digits(as.character(lubridate::minute(tmp)))
+  paste0(hour, ":", mins)
+}
+
+delete_redundant_cols <- function(df){
+  df %>%
+    select(-c(files, itemcode))
+}
+
+clean_date <- function(df){
+  df %>%
+    mutate(date = as.Date(since, format = "%Y-%m-%d"), 
+           hm = purrr::map_chr(since, extract_hm), 
+           .keep = "unused")
+}
+
+find_most_similar <- function(df, track){
+  df %>%
+    mutate(distance = stringdist::stringdist(tolower(name), tolower(track))) %>%
+    filter(distance == min(distance)) %>%
+    slice(1)
+}
+
+find_track_on_spotify <- function(interpret, track, authorization){
+  result <- search_spotify(paste0(interpret, ": ", track), 
+                           type = "track", 
+                           market = "cz", 
+                           authorization = authorization)
+  if(nrow(result) > 0){
+    find_most_similar(result, track) %>%
+      mutate(spotify_artist_id = paste0(artists[[1]]$id, collapse = ";")) %>%
+      select(spotify_artist_id,
+             duration_ms,
+             explicit,
+             spotify_track_id = id,
+             track_name = name, 
+             popularity,
+             spotify_url = external_urls.spotify) %>%
+      mutate(original_interpret = interpret, 
+             original_track = track)
+  }else{
+    tibble(original_interpret = interpret, 
+           original_track = track)
+  }
+}
+
+
+TODAY <- as.Date(Sys.Date())
+WEEKDAY <- lubridate::wday(as.Date(Sys.Date()), 
+                           week_start = 1, 
+                           locale = "cs_CZ.UTF-8")
+
+START_DATE <- TODAY - WEEKDAY - 6
+END_DATE <- START_DATE + 7
+
+args <- commandArgs(trailingOnly = TRUE)
+SPOTIFY_CLIENT_ID <- Sys.getenv("SPOTIFY_CLIENT_ID")
+SPOTIFY_CLIENT_SECRET <- Sys.getenv("SPOTIFY_CLIENT_SECRET")
+
+dates <- seq.Date(from = START_DATE, to = END_DATE, by = 1)
+
+week_playlist <- purrr::map_df(dates, get_day_wave_playlist)
+
+week_playlist_cleaned <- week_playlist %>%
+  delete_redundant_cols %>%
+  clean_date
+
+top_tracks <- week_playlist_cleaned %>% 
+  count(interpret, track, sort = TRUE) %>%
+  filter(n >= .data$n[15])
+
+access_token <- get_spotify_access_token(SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET)
+
+purrr::map2_df(top_tracks$interpret, top_tracks$track, function(artist, song) {
+  Sys.sleep(0.1)
+  cat(artist, ":", song, "\n")
+  find_track_on_spotify(artist, song, 
+                        authorization = access_token)
+}) -> spotify_top_tracks
+
+SPOTIFY_IDS <- spotify_top_tracks %>%
+  filter(!is.na(spotify_track_id)) %>%
+  pull(spotify_track_id)
+
+audio_features <- get_track_audio_features(SPOTIFY_IDS)
+
+hc <- audio_features %>%
+  select(danceability, energy, key, loudness, 
+         mode, speechiness, acousticness, instrumentalness, 
+         liveness, valence, tempo) %>%
+  dist %>%
+  hclust
+
+top_tracks_clustered <- top_tracks %>%
+  right_join(., spotify_top_tracks, 
+             by = c("interpret"="original_interpret", 
+                    "track"="original_track")) %>%
+  filter(!is.na(spotify_track_id)) %>%
+  slice(hc$order)
+
+
+```
+
+<div>
+</div>
+
+<div class="flex-container">
+<div class="playlist">
+```{r, echo=FALSE}
+
+START_DATE <- format(start_date, "%d.%m.%Y")
+END_DATE <- format(end_date, "%d.%m.%Y")
+NOTE <- glue::glue("Nejčastěji přehrávané písně na Radiu Wave mezi {START_DATE} a {END_DATE}")
+
+top_tracks_clustered %>%
+  select(spotify_url, interpret, track) %>%
+  mutate(interpret = glue::glue("<a href='{spotify_url}'><b>{interpret}</b>: {track}</a>"), 
+         spotify_url = glue::glue("<a href='{spotify_url}'><img src='https://emojis.slackmojis.com/emojis/images/1450319454/41/spotify.png?1450319454' width=20></a>")) %>%
+  select(-track) %>%
+  gt() %>%
+  fmt_markdown(columns = everything()) %>%
+  cols_align("left") %>%
+  tab_header(title = "Fully Automated Playlist", 
+             subtitle = NOTE) %>%
+  # tab_source_note(., source_node = NOTE) %>%
+  tab_options(
+    column_labels.hidden = TRUE,
+    heading.title.font.size = 23,
+    table.font.size = 16
+    ) %>%
+  opt_table_font(
+    font = list(
+      # google_font("Roboto"),
+      # google_font("Bitter"),
+      google_font("Overpass Mono"),
+      default_fonts()
+    )
+  )
+```
+</div>
+<div class="help">
+<b>Jak se generuje tenhle playlist?</b>
+<ul>
+<li>V pondělí se stáhnou písně přehrané na Radiu Wave v uplynulém týdnu s pomocí open dat Českého rozhlasu.</li>
+<li>Z přehraných písní se vytvoří seznam cca 15 nejčastěji přehrávaných.</li>
+<li>Písně na tomto seznamu se vyhledají na Spotify, aby se získal odkaz na píseň na Spotify a atributy audia. Písně, které se nenajdou na Spotify, jsou odstraněny.</li>
+<li>Podle atributů audia z dat Spotify se seznam seřadí pomocí hierarchického shlukování tak, aby 'nejpodobnější' písně byly na výsledném seznamu vedle sebe. </li>
+</ul>
+</div>
+</div>
