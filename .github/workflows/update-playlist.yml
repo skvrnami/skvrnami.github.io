@@ -37,7 +37,7 @@ jobs:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
         run: |- 
-          Rscript -e "rmarkdown::render("fully-automated-playlist/playlist.Rmd", output_file = "fully-automated-playlist/index.html")"
+          Rscript -e "rmarkdown::render('fully-automated-playlist/playlist.Rmd', output_file = 'fully-automated-playlist/index.html')"
         
       - name: Commit and push
         run: |-
