@@ -23,24 +23,25 @@ jobs:
       - name: Install libcurl
         run: sudo apt-get install libcurl4-openssl-dev
 
-      # - name: Cache packages
-      #   uses: actions/cache@v2
-      #   with:
-      #     path: ~/.local/share/renv
-      #     key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-renv-
-      # - name: Install Package Dependencies
-      #   run: |-
-      #     Rscript -e "install.packages('renv'); renv::restore(confirm = FALSE)"
-      # 
+      - name: Cache packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.local/share/renv
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
       - name: Install Package Dependencies
         run: |-
-          Rscript -e "install.packages(c('dplyr', 'purrr', 'spotifyr', 'glue', 'stringdist', 'remotes', 'gt', 'lubridate', 'rmarkdown', 'knitr'))"
-          
-      - name: Install rozhlas packages
-        run: |-
-          Rscript -e "remotes::install_github('skvrnami/rozhlas')"
+          Rscript -e "install.packages('renv'); renv::restore(confirm = FALSE)"
+      
+      #
+      # - name: Install Package Dependencies
+      #   run: |-
+      #     Rscript -e "install.packages(c('dplyr', 'purrr', 'spotifyr', 'glue', 'stringdist', 'remotes', 'gt', 'lubridate', 'rmarkdown', 'knitr'))"
+      #     
+      # - name: Install rozhlas packages
+      #   run: |-
+      #     Rscript -e "remotes::install_github('skvrnami/rozhlas')"
       
       - name: Knit playlist
         env: 
@@ -48,6 +49,7 @@ jobs:
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
         run: |- 
           Rscript -e "rmarkdown::render('fully-automated-playlist/playlist.Rmd', output_file = 'index.html')"
+      
       #   
       # - name: Commit and push
       #   run: |-
