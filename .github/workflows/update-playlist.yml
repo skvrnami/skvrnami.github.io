@@ -34,7 +34,11 @@ jobs:
       # 
       - name: Install Package Dependencies
         run: |-
-          Rscript -e "install.packages(c('dplyr', 'purrr', 'spotifyr', 'glue', 'stringdist', 'remotes', 'gt', 'lubridate', 'rmarkdown', 'knitr')); remotes::install_github('skvrnami/rozhlas')"
+          Rscript -e "install.packages(c('dplyr', 'purrr', 'spotifyr', 'glue', 'stringdist', 'remotes', 'gt', 'lubridate', 'rmarkdown', 'knitr'))"
+          
+      - name: Install rozhlas packages
+        run: |-
+          Rscript -e "remotes::install_github('skvrnami/rozhlas')"
       
       - name: Knit playlist
         env: 
