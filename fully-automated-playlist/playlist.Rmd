@@ -124,6 +124,10 @@ top_tracks <- week_playlist_cleaned %>%
   count(interpret, track, sort = TRUE) %>%
   filter(n >= .data$n[15])
 
+if(nrow(top_tracks) > 20){
+  top_tracks <- head(top_tracks, 20)
+}
+
 access_token <- get_spotify_access_token(SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET)
 
 purrr::map2_df(top_tracks$interpret, top_tracks$track, function(artist, song) {
