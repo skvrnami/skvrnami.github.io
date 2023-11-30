@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>skvrnami</title>
+    <link>http://skvrnami.github.io/</link>
+    <description>Recent content on skvrnami</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Nov 2023 19:51:32 +0100</lastBuildDate><atom:link href="http://skvrnami.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>listopad 2023</title>
+      <link>http://skvrnami.github.io/log/2023-11/</link>
+      <pubDate>Thu, 30 Nov 2023 19:51:32 +0100</pubDate>
+      
+      <guid>http://skvrnami.github.io/log/2023-11/</guid>
+      <description>Přednášel jsem, ehm, pokoušel se přednést krátké intro o survey experimentech a analýze dat z nich na fildě. Všechny materiály jsou tu.
+Vyšla kniha Volební volatilita v postkomunistické Evropě, při jejímž vzniku jsem přicmrndával.
+Kolo štěstí ve formě Grantové agentury ČR nepřála projektu, o kterém jsem skoro zapomněl, že na něm jsem napsaný.
+&amp;ndash;
+Poslouchal jsem IAN SWEET - Sucker.
+Přečetl jsem mj. Babel od Rachel F. Kuang. Spekulativní fikci dunkující na anglickou kuchyni nelze nemilovat.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://skvrnami.github.io/about/</link>
+      <pubDate>Sat, 05 Nov 2016 21:05:33 +0530</pubDate>
+      
+      <guid>http://skvrnami.github.io/about/</guid>
+      <description>east european data plumber</description>
+    </item>
+    
+  </channel>
+</rss>
