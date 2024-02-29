@@ -1,0 +1,35 @@
+---
+title: "únor 2024"
+date: 2024-02-29
+draft: false
+---
+
+V rámci prokrastinace jsem se pokoušel dostat k datům z dotazníkových šetření prováděných mezi polskou mládeží. Ze 3 mne známých výzkumů jsem oslovil autory dvou. V tom lepším případě jsem dostal kontingenční tabulky, které sice byly hezké, ale ne to, co jsem chtěl. Inu, různí lidé myslí pod slovem data různé věci. V druhém případě mi autor reportu napsal, že nemá data k dispozici. To se tak stává, že autoři nemají data. Asi je dal do špatného hrníčku.
+
+[Wujek Dobra rada](https://open.spotify.com/track/6KLDsYukS68dvq8Ciu6MXd?si=b622c8555ce94507) by dodal, že když si zaplatíte sběr dotazníků, je dobré si nechat poslat zdrojový soubor a hodit ho do datového archivu. 
+
+Enough shit talk, staly se i dobré věci. Díky milému emailu jsme se dozvěděli, že [requal](https://requal.fsv.cuni.cz/) se používá od FSV (to jsme věděli) po Filipíny (to jsme zjistili). "Možná jsme udělali něco užitečného", poznamenal Radim.
+
+---
+
+Čísla za únor:  
+
+```{r, echo=FALSE}
+json <- httr::GET("https://www.duolingo.com/2017-06-30/users?username=Michaelkvr1&fields=streak,streakData%7BcurrentStreak,previousStreak%7D%7D`")
+data <- jsonlite::fromJSON(intToUtf8(json$content))
+streak_length <- data$users$streakData$currentStreak$length
+```
+
+Duolingo streak: `r streak_length`
+
+Počet desk rejections: 1 ("Although your paper is well done, it is not of sufficient broad interest to our readers")
+
+Počet paperů, na kterých jsem dělal tenhle měsíc: 4
+
+Kolikrát jsem si tento měsíc řekl "Tohle je tak beznadějně zkurvená země": 1 (to je vlastně celkem málo)
+
+---
+
+> "Zajtra bude všetko inak, zajtra bude ako vždy, bude ako predtým: jednotvárne dni doma, kde si každý robí svoje, kde je každý na svojom mieste, kde nie je nič zbytočné a nepotrebné. Rána sú plné bežného ruchu, práca, na ktorú si zvykneš ako na oblečenie: netlačí, nezavadzia, nosí sa, kým sa dá nosiť. Tiché večery, temné noci." (Serhij Žadan: Internát)
+
+Disco Elysium soundtrack - [Sea power: Whirling-in-rags, 8PM](https://open.spotify.com/track/3TOCzZr8KJzPEmenbBLGT5?si=bf20726a37e34601)
