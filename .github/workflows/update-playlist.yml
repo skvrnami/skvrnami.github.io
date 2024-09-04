@@ -38,6 +38,10 @@ jobs:
       - name: Install Package Dependencies
         run: |-
           Rscript -e "install.packages(c('dplyr', 'purrr', 'spotifyr', 'glue', 'stringdist', 'remotes', 'gt', 'lubridate', 'rmarkdown', 'knitr'))"
+      
+      - name: Install spotifyr package
+        run: |-
+          Rscript -e "remotes::install_github('charlie86/spotifyr')"
 
       - name: Install rozhlas packages
         run: |-
