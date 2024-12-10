@@ -141,21 +141,21 @@ SPOTIFY_IDS <- spotify_top_tracks %>%
   filter(!is.na(spotify_track_id)) %>%
   pull(spotify_track_id)
 
-audio_features <- get_track_audio_features(SPOTIFY_IDS)
-
-hc <- audio_features %>%
-  select(danceability, energy, key, loudness, 
-         mode, speechiness, acousticness, instrumentalness, 
-         liveness, valence, tempo) %>%
-  dist %>%
-  hclust
-
-top_tracks_clustered <- top_tracks %>%
-  right_join(., spotify_top_tracks, 
-             by = c("interpret"="original_interpret", 
-                    "track"="original_track")) %>%
-  filter(!is.na(spotify_track_id)) %>%
-  slice(hc$order)
+# audio_features <- get_track_audio_features(SPOTIFY_IDS)
+# 
+# hc <- audio_features %>%
+#   select(danceability, energy, key, loudness, 
+#          mode, speechiness, acousticness, instrumentalness, 
+#          liveness, valence, tempo) %>%
+#   dist %>%
+#   hclust
+# 
+# top_tracks_clustered <- top_tracks %>%
+#   right_join(., spotify_top_tracks, 
+#              by = c("interpret"="original_interpret", 
+#                     "track"="original_track")) %>%
+#   filter(!is.na(spotify_track_id)) %>%
+#   slice(hc$order)
 
 
 ```
@@ -171,11 +171,12 @@ START_DATE_F <- format(START_DATE, "%d.%m.%Y")
 END_DATE_F <- format(END_DATE, "%d.%m.%Y")
 NOTE <- glue::glue("Nejčastěji přehrávané písně na Radiu Wave mezi {START_DATE_F} a {END_DATE_F}")
 
-top_tracks_clustered %>%
-  select(spotify_url, interpret, track) %>%
-  mutate(interpret = glue::glue("<a href='{spotify_url}'><b>{interpret}</b>: {track}</a>"), 
+spotify_top_tracks %>%
+# top_tracks_clustered %>%
+  select(spotify_url, original_interpret, track_name) %>%
+  mutate(original_interpret = glue::glue("<a href='{spotify_url}'><b>{original_interpret}</b>: {track_name}</a>"), 
          spotify_url = glue::glue("<a href='{spotify_url}'><img src='https://emojis.slackmojis.com/emojis/images/1450319454/41/spotify.png?1450319454' width=20></a>")) %>%
-  select(-track) %>%
+  select(-track_name) %>%
   gt() %>%
   fmt_markdown(columns = everything()) %>%
   cols_align("left") %>%
@@ -203,7 +204,7 @@ top_tracks_clustered %>%
 <li>V pondělí se stáhnou písně přehrané na Radiu Wave v uplynulém týdnu s pomocí open dat Českého rozhlasu.</li>
 <li>Z přehraných písní se vytvoří seznam cca 15 nejčastěji přehrávaných.</li>
 <li>Písně na tomto seznamu se vyhledají na Spotify, aby se získal odkaz na píseň na Spotify a atributy audia. Písně, které se nenajdou na Spotify, jsou odstraněny.</li>
-<li>Podle atributů audia z dat Spotify se seznam seřadí pomocí hierarchického shlukování tak, aby 'nejpodobnější' písně byly na výsledném seznamu vedle sebe. </li>
+<li>(Tohle platilo do prosince 2024, než Spotify změnilo pravidla pro přístup k API: Podle atributů audia z dat Spotify se seznam seřadí pomocí hierarchického shlukování tak, aby 'nejpodobnější' písně byly na výsledném seznamu vedle sebe.)</li>
 </ul>
 </div>
 </div>
